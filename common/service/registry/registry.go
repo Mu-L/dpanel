@@ -28,7 +28,7 @@ func (self Registry) Client() client.Client {
 			slog.Debug("registry pluck client", "url", c.Address(), "err", err)
 		}
 	}
-	slog.Debug("registry return client", "url", c.Address())
+	slog.Debug("registry return client", "client", c)
 	return c
 }
 
